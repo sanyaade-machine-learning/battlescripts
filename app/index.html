@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Battle Scripts &copy;</title>
+        <meta name="generator" content="Battlescripts" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/splash-page.css">
+        <link href='//fonts.googleapis.com/css?family=Nixie+One|Ruda:400,900,700' rel='stylesheet' type='text/css'>
+        <script>
+			//Check browser compatibility
+			var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+			var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+			var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+			var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+			var is_Opera = navigator.userAgent.indexOf("Presto") > -1;
+			if ((is_chrome)&&(is_safari)) {is_safari=false;}
+			
+			 if (is_explorer || is_safari) {
+			    alert("We are sorry battlescripts.net does not support your browser. Please use the latest Chrome or Firefox to run battlescripts.");
+			  }
+        </script>
+    </head>
+    
+    <body>
+    <div id="wrapper">
+    	<div id="header">
+        
+         <h1>Battle Scripts</h1>
+         <p>battle one line at a time</p>
+        </div>
+         <a href="intro.html">
+        <div id="intro" class="action-button">
+            <h3>Introduction</h3>
+            <p>An introduction to the concept of BattleScripts and why it is cool</p>
+         </div>
+         </a>
+         <a href="./arena">
+        <div id="enter-arena" class="action-button">
+            <h3>Enter The Arena</h3>
+            <p>Send your minions to battle.</p>
+         </div>
+         </a>
+         <a href="./devplayer/">
+      <div id="enter-dev" class="action-button">
+            <h3>Player Developer</h3>
+            <p>Create your army.</p>
+      </div>
+      </a>
+     </div>
+</body>
+</html>

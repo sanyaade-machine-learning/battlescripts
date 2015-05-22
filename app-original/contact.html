@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Contact Us</title>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/angular.js"></script>
+<script type="text/javascript" src="/js/contact.js"></script>
+<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
+</head>
+<body ng-app="myapp">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222928341227986";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="row-fluid" ng-controller ="contactCntrl">
+<div class="alert alert-success" ng-show="saveSuccessful">
+	Your request has been sent.
+</div>
+<div class="container" id="content">
+
+<div class='container usersContainer span4 offset1' >
+          <!-- Start: CONTACT US FORM -->
+            <div class="page-header">
+              <h2>Contact Us</h2>
+            </div>
+            <form class="form-contact-us">
+              <div class="control-group">
+                <div class="controls">
+                  <input type="text" id="inputName" placeholder="Name" ng-model ="data.name">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email" ng-model="data.email">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <textarea id="inputMessage" placeholder="Message" rows="5" ng-model="data.messagetext"></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input type="submit" class="btn btn-primary btn-large" value="Send" ng-click="contactSend()">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class='span5 offset1'>
+           	<div class="page-header" style="margin-top:30px;">Love us? Hate us? Let us know.</div>
+          	<div class="control-group">
+          		<div class="fb-like-box" data-href="https://www.facebook.com/battlescript" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+          </div>
+		</div>
+</div>
+
+</div>
+</body>
+</html>

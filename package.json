@@ -1,0 +1,16 @@
+{
+  "name": "battlescripts",
+  "version": "1.0.0",
+  "description": "Code Battle",
+  "main": "server.js",
+  "author": "Matt Kruse",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "ejs": "^2.3.1",
+    "express": "~4.0.0",
+    "simple-fs-rest": "^1.0.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.6.0"
+  }
+}

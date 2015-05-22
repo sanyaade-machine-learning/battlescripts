@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>BattleScripts / Introduction</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link href='//fonts.googleapis.com/css?family=Nixie+One|Ruda:400,900,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="wrap" class="wrap" ng-app="battlescripts">
+
+<p>
+BattleScripts is a site where you code game-playing algorithms using javascript, the most popular programming language in the world. Then you run your player against the code written by others and see who wins. The goal is to write the best player algorithm for a given game, and beat all the other opponents.
+</p>
+
+<h3>A Quick Overview Of How It Works</h3>
+<ul class="bullet">
+    <li>Pick a game you want to play - anything from Tic-Tac-Toe to Battle Tanks and more.
+    <li>Use our built-in editor to code a "player" algorithm in javascript that can play the game.
+        <ul>
+            <li>Use our default template for a quick start
+            <li>Or if you're an expert, code from scratch
+        </ul>
+    <li>Our game controller engine runs your player against an opponent and displays the game as it runs
+        <ul>
+            <li>The game controller calls each player's code when it is its turn
+            <li>A JSON object describing the game's state is passed in
+            <li>The player inspects the game state and makes its next move
+            <li>Repeat until one player wins!
+    <li>You make changes using the editor and debugging tools until your player is the smartest you can make it!
+    <li>Some games may be simple enough to allow you to code an optimal player (like Tic-Tac-Toe)
+    <li>Other games will never be solvable, so you write the best player you can
+</ul>
+
+<h3>FAQs</h3>
+
+<div class="q">How exactly do I code a Player?</div>
+<div class="a">You create a javascript Player object that implements a couple API methods. Those methods get automatically called by the game controller. As long as you follow the simple API, your player will work. Don't worry, we provide you with a default Player object to get you started.</div>
+
+<div class="q">Do I have to know how to program?</div>
+<div class="a">Yes, or at least have a desire to learn. This is a site for people who can code and think through algorithms.</div>
+
+<div class="q">Do I have to be an expert programmer?</div>
+<div class="a">No! There are games at many skill levels, and simple players can be written with a minimal amount of javascript knowledge. BattleScripts can be a learning tool! Of course, for more complicated games, experienced programmers will have a significant advantage, and understanding javascript in depth will certainly help you to create more robust players.</div>
+
+<div class="q">How does my player know what to do?</div>
+<div class="a">Each time it's your player's turn, its move() method will be called and passed a JSON object. This object contains all the information about the game state that you need to know to make an informed decision about your next move. For most games, players take turns. In some games, players may move simultaneously. It depends on the game.</div>
+
+<div class="q">Is there human intervention? Can I change the code between moves?</div>
+<div class="a">No, the players are completely autonomous. They must know how to make a move in any situation, without any external input. For games like Tic-Tac-Toe, this is pretty simple. For games like Chess, not so much.</div>
+
+<div class="q">Where is my player stored?</div>
+<div class="a">All player code is stored in our database. You edit your code using our IDE, and save it while you work on it. Once it's ready, you PUBLISH it and make it visible to others to play against.</div>
+
+<div class="q">Can I revise my player's code?</div>
+<div class="a">Yes! You can continually work on your player and improve its algorithm. Whenever you RE-PUBLISH your player's code, it will be visible to others and they can play against you.</div>
+
+<div class="q">Question...</div>
+<div class="a"> ... answer ...</div>
+
+<div class="q">Question...</div>
+<div class="a"> ... answer ...</div>
+
+<div class="q">Question...</div>
+<div class="a"> ... answer ...</div>
+
+<div class="q">Question...</div>
+<div class="a"> ... answer ...</div>
+
+
+
+  <script type="text/javascript" src="../js/lodash.js"></script>
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="../js/angular-resource.js"></script>
+  <script type="text/javascript" src="../js/restangular.js"></script>
+  <script type="text/javascript" src="../js/battlescripts-app.js"></script>
+  <script type="text/javascript" src="../js/Arbiter.js"></script>
+  <script type="text/javascript" src="../js/Match.js"></script>
+  <script type="text/javascript" src="../js/modalLogin.js"></script>
+  <script type="text/javascript" src="../js/hello.min.js"></script>
+</body>
+</html>

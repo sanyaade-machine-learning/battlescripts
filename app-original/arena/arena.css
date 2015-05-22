@@ -1,0 +1,68 @@
+main {
+  background-color: #DBFCFF;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > * { margin: auto; }
+
+.dialog {
+  background-color: #5D94FB;
+  border: 4px solid #90B6FF;
+  padding: 20px;
+  border-bottom: 4px solid #335588;
+  border-right: 4px solid #335588;
+  font-size: 10px;
+  color: #DBFCFF;
+  margin: auto;
+}
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4 { font-size: 12px; }
+h5 { font-size: 10px; }
+h6 { font-size: 8px;  }
+
+.delete {
+  float:right;
+  color: #CC4B09;
+  cursor: pointer;
+}
+
+.container {padding: 0 0 15px 0;}
+
+label {
+  width:100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+select {
+  background: url('/images/down-arrow-white.png') no-repeat right 5px center;
+}
+select, input[type='text'] {
+  width: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  -webkit-appearance:inherit;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0);
+  background-size: 20px;
+  color: #FFF;
+  border-radius: 0;
+  font-family: monospace;
+}
+select option {
+	color:black;
+}
+p {
+padding: 0 0 15px 0;
+}
+#left-panel {
+  width: 350px;
+  background-color: #2E2E2E;
+  align-self: stretch;
+  color: #DBFCFF;
+  padding: 20px;
+}

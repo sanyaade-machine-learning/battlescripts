@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/modalLogin.js"></script>
+		<script src="/js/hello.min.js"></script>
+	</head>
+	<body>
+		<div class="row" style="margin-top:20px;">
+    		<div class="span11 pull-right"><textarea rows="4" cols="50"></textarea></div>
+    	</div>
+    	<div class="row">	
+    		<div class="span10 pull-right"><button onClick="loginFunc();return false;">Login</button></div>
+    	</div>
+	</body>
+	<script>
+		function loginFunc(){
+			$.when(login()).then(function(result){
+				alert(result);
+			}, function(err){
+				alert(err);
+			});
+		}
+	</script>
+</html>
