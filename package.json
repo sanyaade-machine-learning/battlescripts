@@ -5,12 +5,22 @@
   "main": "server.js",
   "author": "Matt Kruse",
   "dependencies": {
+    "angular": "^1.3.15",
+    "angular-ui-router": "^0.2.15",
     "body-parser": "~1.0.1",
     "ejs": "^2.3.1",
     "express": "~4.0.0",
+    "normalize.css": "^3.0.3",
     "simple-fs-rest": "^1.0.1"
   },
   "devDependencies": {
+    "angular-mocks": "^1.3.15",
+    "front-end-work-flow": "taylor1791/front-end-work-flow#develop",
+    "less": "^2.5.1",
     "supervisor": "^0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-kruse/battlescripts"
   }
 }

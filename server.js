@@ -13,4 +13,4 @@ app.use(express.static('./app'));
 app.use('/api',simpleFsRest());
 
 app.listen(PORT);
-console.log("Listening on port "+PORT);
+console.log('Listening on port '+PORT);
