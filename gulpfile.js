@@ -9,7 +9,7 @@ var removeJsStyles = function( arr ) {
 };
 
 // Remove js-style from manticore-sting
-setup.aggTaskDefinitions[ 'manticore-sting' ] =
+setup.aggTaskDefinitions[ 'manticore-sting' ].dependencies =
   removeJsStyles( setup.aggTaskDefinitions[ 'manticore-sting' ].dependencies );
 
 // Remove js-styles from all watches
@@ -29,6 +29,7 @@ few.files = {
   css: [ 'app/style.less' ],
   browser: [ 'app/**/*.js', '!app/**/*.spec.js' ],
   node: [ 'gulpfile.js', 'server.js' ],
+  html: [ 'app/**/*.html' ],
   json: [ 'package.json' ],
   unit: [
     'node_modules/angular-mocks/angular-mocks.js',
